@@ -1,13 +1,13 @@
 //
-//  PodcastRequest.swift
-//  ArabamAssignment
+//  SoftwareRequest.swift
+//  iTunes Client App
 //
-//  Created by Muhammed Karakul on 11.01.2022.
+//  Created by Ömer Faruk Kazar on 10.10.2022.
 //
 
 import Foundation
 
-struct PodcastRequest: DataRequest {
+struct SoftwareRequest: DataRequest {
 
     var baseURL: String {
         "https://itunes.apple.com"
@@ -18,19 +18,17 @@ struct PodcastRequest: DataRequest {
     }
 
     var queryItems: [String : String] {
-        ["term": "Podcast"]
+        ["term": "Software"]
     }
 
     var method: HTTPMethod {
         .get
     }
 
-    func decode(_ data: Data) throws -> PodcastResponse {
+    func decode(_ data: Data) throws -> SoftwareResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(PodcastResponse.self, from: data)
+        let response = try decoder.decode(SoftwareResponse.self, from: data)
         return response
     }
 }
-
-

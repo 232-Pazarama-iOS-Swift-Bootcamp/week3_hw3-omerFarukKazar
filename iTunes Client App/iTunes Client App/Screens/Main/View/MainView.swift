@@ -32,7 +32,7 @@ final class MainView: UIView {
         collectionView.register(PodcastCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         setupCollectionViewLayout()
     }
-    
+     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

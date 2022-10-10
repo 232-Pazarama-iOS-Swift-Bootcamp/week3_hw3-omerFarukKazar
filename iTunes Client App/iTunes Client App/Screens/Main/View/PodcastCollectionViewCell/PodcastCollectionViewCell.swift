@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PodcastCollectionViewCell: UICollectionViewCell {
+class PodcastCollectionViewCell: UICollectionViewCell {
     var image: UIImage? {
         didSet {
             imageView.image = image

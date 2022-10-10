@@ -53,9 +53,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func setupWindow(with windowScene: UIWindowScene) {
         let window = UIWindow(windowScene: windowScene)
         let viewController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+//        let navigationController = UINavigationController(rootViewController: viewController)
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [navigationController]
+
+        
+        let vc1 = UINavigationController(rootViewController: viewController)
+        let vc2 = UINavigationController(rootViewController: MovieViewController())
+        let vc3 = UINavigationController(rootViewController: MusicTabViewController())
+        let vc4 = UINavigationController(rootViewController: SoftwareTabViewController())
+        let vc5 = UINavigationController(rootViewController: EBookTabViewController())
+        
+        tabBarController.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: true)
+        
+        vc1.title = "Podcasts"
+        vc2.title = "Movie"
+        vc3.title = "Music"
+        vc4.title = "Software"
+        vc5.title = "E-Book"
+        
+        guard let items = tabBarController.tabBar.items else {
+            return
+        }
+
+        
+        let iconNames = ["mic", "film", "music.note", "square.and.arrow.down", "book"]
+
+        for i in 0..<items.count {
+            items[i].image = UIImage(systemName: iconNames[i])
+        }
+        
+//        tabBarController.viewControllers = [navigationController]
+        
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
         self.window = window

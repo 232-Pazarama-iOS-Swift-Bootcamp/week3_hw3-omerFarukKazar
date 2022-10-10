@@ -1,13 +1,13 @@
 //
-//  Podcast.swift
+//  EBook.swift
 //  iTunes Client App
 //
-//  Created by Pazarama iOS Bootcamp on 1.10.2022.
+//  Created by Ömer Faruk Kazar on 10.10.2022.
 //
 
 import Foundation
 
-struct Podcast: Decodable {
+struct EBook: Decodable {
     let artistName: String?
     let trackName: String?
     let artworkLarge: URL?

@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D52048F28F3577500A4A188 /* EbookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52048E28F3577500A4A188 /* EbookCollectionViewCell.swift */; };
+		9D52049128F35A7C00A4A188 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52049028F35A7C00A4A188 /* MovieResponse.swift */; };
+		9D52049328F420A400A4A188 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52049228F420A400A4A188 /* MovieDetailViewController.swift */; };
+		9D52049528F420CF00A4A188 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52049428F420CF00A4A188 /* Movie.swift */; };
+		9D52049728F422FB00A4A188 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52049628F422FB00A4A188 /* MovieRequest.swift */; };
+		9D52049D28F4250200A4A188 /* MusicTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52049C28F4250200A4A188 /* MusicTabViewController.swift */; };
+		9D52049F28F4257900A4A188 /* MusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52049E28F4257900A4A188 /* MusicRequest.swift */; };
+		9D5204A128F4259700A4A188 /* SoftwareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204A028F4259700A4A188 /* SoftwareRequest.swift */; };
+		9D5204A328F425B500A4A188 /* EBookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204A228F425B500A4A188 /* EBookRequest.swift */; };
+		9D5204A528F4262E00A4A188 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204A428F4262E00A4A188 /* Music.swift */; };
+		9D5204A728F4263700A4A188 /* MusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204A628F4263700A4A188 /* MusicResponse.swift */; };
+		9D5204A928F4263E00A4A188 /* Software.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204A828F4263E00A4A188 /* Software.swift */; };
+		9D5204AB28F4264300A4A188 /* SoftwareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204AA28F4264300A4A188 /* SoftwareResponse.swift */; };
+		9D5204AD28F4264A00A4A188 /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204AC28F4264A00A4A188 /* EBook.swift */; };
+		9D5204AF28F4264F00A4A188 /* EBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204AE28F4264F00A4A188 /* EBookResponse.swift */; };
+		9D5204B128F4273500A4A188 /* MusicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B028F4273500A4A188 /* MusicDetailViewController.swift */; };
+		9D5204B328F4273D00A4A188 /* SoftwareDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B228F4273D00A4A188 /* SoftwareDetailViewController.swift */; };
+		9D5204B528F4274500A4A188 /* EbookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B428F4274500A4A188 /* EbookDetailViewController.swift */; };
+		9D5204B728F4325A00A4A188 /* SoftwareTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B628F4325A00A4A188 /* SoftwareTabViewController.swift */; };
+		9D5204B928F4326400A4A188 /* EBookTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B828F4326400A4A188 /* EBookTabViewController.swift */; };
+		9D5204BB28F4327000A4A188 /* MovieTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204BA28F4327000A4A188 /* MovieTabViewController.swift */; };
 		ED11A83728E99D060036F7DE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11A83428E99D060036F7DE /* ErrorResponse.swift */; };
 		ED11A83828E99D060036F7DE /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11A83528E99D060036F7DE /* DataRequest.swift */; };
 		ED11A83928E99D060036F7DE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11A83628E99D060036F7DE /* HTTPMethod.swift */; };
@@ -28,6 +49,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D52048E28F3577500A4A188 /* EbookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbookCollectionViewCell.swift; sourceTree = "<group>"; };
+		9D52049028F35A7C00A4A188 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		9D52049228F420A400A4A188 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		9D52049428F420CF00A4A188 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9D52049628F422FB00A4A188 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
+		9D52049C28F4250200A4A188 /* MusicTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTabViewController.swift; sourceTree = "<group>"; };
+		9D52049E28F4257900A4A188 /* MusicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRequest.swift; sourceTree = "<group>"; };
+		9D5204A028F4259700A4A188 /* SoftwareRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareRequest.swift; sourceTree = "<group>"; };
+		9D5204A228F425B500A4A188 /* EBookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookRequest.swift; sourceTree = "<group>"; };
+		9D5204A428F4262E00A4A188 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		9D5204A628F4263700A4A188 /* MusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponse.swift; sourceTree = "<group>"; };
+		9D5204A828F4263E00A4A188 /* Software.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Software.swift; sourceTree = "<group>"; };
+		9D5204AA28F4264300A4A188 /* SoftwareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareResponse.swift; sourceTree = "<group>"; };
+		9D5204AC28F4264A00A4A188 /* EBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
+		9D5204AE28F4264F00A4A188 /* EBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookResponse.swift; sourceTree = "<group>"; };
+		9D5204B028F4273500A4A188 /* MusicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailViewController.swift; sourceTree = "<group>"; };
+		9D5204B228F4273D00A4A188 /* SoftwareDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareDetailViewController.swift; sourceTree = "<group>"; };
+		9D5204B428F4274500A4A188 /* EbookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbookDetailViewController.swift; sourceTree = "<group>"; };
+		9D5204B628F4325A00A4A188 /* SoftwareTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareTabViewController.swift; sourceTree = "<group>"; };
+		9D5204B828F4326400A4A188 /* EBookTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookTabViewController.swift; sourceTree = "<group>"; };
+		9D5204BA28F4327000A4A188 /* MovieTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTabViewController.swift; sourceTree = "<group>"; };
 		ED11A83428E99D060036F7DE /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		ED11A83528E99D060036F7DE /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		ED11A83628E99D060036F7DE /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -61,10 +103,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D52048A28F2FF9D00A4A188 /* MovieCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieCollectionView;
+			sourceTree = "<group>";
+		};
+		9D52048B28F2FFDD00A4A188 /* MusicCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MusicCollectionView;
+			sourceTree = "<group>";
+		};
+		9D52048C28F2FFE700A4A188 /* SoftwareCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SoftwareCollectionView;
+			sourceTree = "<group>";
+		};
+		9D52048D28F2FFF200A4A188 /* EbookCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9D52048E28F3577500A4A188 /* EbookCollectionViewCell.swift */,
+			);
+			path = EbookCollectionView;
+			sourceTree = "<group>";
+		};
 		ED11A83A28E99D2A0036F7DE /* Requests */ = {
 			isa = PBXGroup;
 			children = (
 				ED11A83B28E99D2A0036F7DE /* PodcastRequest.swift */,
+				9D52049628F422FB00A4A188 /* MovieRequest.swift */,
+				9D52049E28F4257900A4A188 /* MusicRequest.swift */,
+				9D5204A028F4259700A4A188 /* SoftwareRequest.swift */,
+				9D5204A228F425B500A4A188 /* EBookRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -170,6 +245,10 @@
 			isa = PBXGroup;
 			children = (
 				ED180E6728E815D8001D594F /* MainViewController.swift */,
+				9D5204BA28F4327000A4A188 /* MovieTabViewController.swift */,
+				9D52049C28F4250200A4A188 /* MusicTabViewController.swift */,
+				9D5204B628F4325A00A4A188 /* SoftwareTabViewController.swift */,
+				9D5204B828F4326400A4A188 /* EBookTabViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +256,10 @@
 		ED180E8128E82574001D594F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D52048A28F2FF9D00A4A188 /* MovieCollectionView */,
+				9D52048B28F2FFDD00A4A188 /* MusicCollectionView */,
+				9D52048C28F2FFE700A4A188 /* SoftwareCollectionView */,
+				9D52048D28F2FFF200A4A188 /* EbookCollectionView */,
 				EDA9F61728E8535D00774EEB /* PodcastCollectionViewCell */,
 				ED180E8228E8258F001D594F /* MainView.swift */,
 			);
@@ -209,6 +292,14 @@
 			children = (
 				ED180E8928E8308A001D594F /* PodcastResponse.swift */,
 				ED180E8B28E830CE001D594F /* Podcast.swift */,
+				9D52049028F35A7C00A4A188 /* MovieResponse.swift */,
+				9D52049428F420CF00A4A188 /* Movie.swift */,
+				9D5204A628F4263700A4A188 /* MusicResponse.swift */,
+				9D5204A428F4262E00A4A188 /* Music.swift */,
+				9D5204AA28F4264300A4A188 /* SoftwareResponse.swift */,
+				9D5204A828F4263E00A4A188 /* Software.swift */,
+				9D5204AE28F4264F00A4A188 /* EBookResponse.swift */,
+				9D5204AC28F4264A00A4A188 /* EBook.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +326,10 @@
 			isa = PBXGroup;
 			children = (
 				ED3F0D9E28E9769A00E21B48 /* DetailViewController.swift */,
+				9D52049228F420A400A4A188 /* MovieDetailViewController.swift */,
+				9D5204B028F4273500A4A188 /* MusicDetailViewController.swift */,
+				9D5204B228F4273D00A4A188 /* SoftwareDetailViewController.swift */,
+				9D5204B428F4274500A4A188 /* EbookDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,20 +420,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D52049D28F4250200A4A188 /* MusicTabViewController.swift in Sources */,
+				9D5204A528F4262E00A4A188 /* Music.swift in Sources */,
 				ED3F0D9F28E9769A00E21B48 /* DetailViewController.swift in Sources */,
+				9D5204B728F4325A00A4A188 /* SoftwareTabViewController.swift in Sources */,
 				ED11A84128E99D2A0036F7DE /* PodcastRequest.swift in Sources */,
 				ED3F0DA328E976EA00E21B48 /* DetailView.swift in Sources */,
+				9D5204AB28F4264300A4A188 /* SoftwareResponse.swift in Sources */,
+				9D5204A128F4259700A4A188 /* SoftwareRequest.swift in Sources */,
 				ED11A84428E99D2A0036F7DE /* NetworkService.swift in Sources */,
+				9D52048F28F3577500A4A188 /* EbookCollectionViewCell.swift in Sources */,
+				9D52049728F422FB00A4A188 /* MovieRequest.swift in Sources */,
+				9D52049F28F4257900A4A188 /* MusicRequest.swift in Sources */,
 				ED180E8A28E8308A001D594F /* PodcastResponse.swift in Sources */,
+				9D5204B328F4273D00A4A188 /* SoftwareDetailViewController.swift in Sources */,
 				ED180E8C28E830CE001D594F /* Podcast.swift in Sources */,
+				9D5204B528F4274500A4A188 /* EbookDetailViewController.swift in Sources */,
+				9D5204B128F4273500A4A188 /* MusicDetailViewController.swift in Sources */,
 				ED180E6828E815D8001D594F /* MainViewController.swift in Sources */,
+				9D5204AF28F4264F00A4A188 /* EBookResponse.swift in Sources */,
 				ED11A83828E99D060036F7DE /* DataRequest.swift in Sources */,
 				ED180E8328E8258F001D594F /* MainView.swift in Sources */,
 				ED11A83728E99D060036F7DE /* ErrorResponse.swift in Sources */,
+				9D5204A928F4263E00A4A188 /* Software.swift in Sources */,
+				9D5204AD28F4264A00A4A188 /* EBook.swift in Sources */,
 				ED180E6428E815D8001D594F /* AppDelegate.swift in Sources */,
 				ED3F0D9C28E96FCD00E21B48 /* CGFloat+Extensions.swift in Sources */,
+				9D52049328F420A400A4A188 /* MovieDetailViewController.swift in Sources */,
+				9D52049528F420CF00A4A188 /* Movie.swift in Sources */,
+				9D5204BB28F4327000A4A188 /* MovieTabViewController.swift in Sources */,
 				ED3F0D9A28E9649100E21B48 /* UIImage+Extensions.swift in Sources */,
+				9D5204B928F4326400A4A188 /* EBookTabViewController.swift in Sources */,
+				9D5204A328F425B500A4A188 /* EBookRequest.swift in Sources */,
 				ED11A83928E99D060036F7DE /* HTTPMethod.swift in Sources */,
+				9D52049128F35A7C00A4A188 /* MovieResponse.swift in Sources */,
+				9D5204A728F4263700A4A188 /* MusicResponse.swift in Sources */,
 				ED180E6628E815D8001D594F /* SceneDelegate.swift in Sources */,
 				EDA9F61928E8537A00774EEB /* PodcastCollectionViewCell.swift in Sources */,
 			);
