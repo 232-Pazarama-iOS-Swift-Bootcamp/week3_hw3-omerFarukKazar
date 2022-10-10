@@ -28,6 +28,11 @@
 		9D5204B728F4325A00A4A188 /* SoftwareTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B628F4325A00A4A188 /* SoftwareTabViewController.swift */; };
 		9D5204B928F4326400A4A188 /* EBookTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204B828F4326400A4A188 /* EBookTabViewController.swift */; };
 		9D5204BB28F4327000A4A188 /* MovieTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204BA28F4327000A4A188 /* MovieTabViewController.swift */; };
+		9D5204BD28F4581900A4A188 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204BC28F4581900A4A188 /* MovieDetailView.swift */; };
+		9D5204BF28F4582300A4A188 /* MusicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204BE28F4582300A4A188 /* MusicDetailView.swift */; };
+		9D5204C128F4582800A4A188 /* SoftwareDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204C028F4582800A4A188 /* SoftwareDetailView.swift */; };
+		9D5204C328F4583E00A4A188 /* EBookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204C228F4583E00A4A188 /* EBookDetailView.swift */; };
+		9D5204C828F4878A00A4A188 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D5204C628F4878A00A4A188 /* Model.xcdatamodeld */; };
 		ED11A83728E99D060036F7DE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11A83428E99D060036F7DE /* ErrorResponse.swift */; };
 		ED11A83828E99D060036F7DE /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11A83528E99D060036F7DE /* DataRequest.swift */; };
 		ED11A83928E99D060036F7DE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED11A83628E99D060036F7DE /* HTTPMethod.swift */; };
@@ -70,6 +75,11 @@
 		9D5204B628F4325A00A4A188 /* SoftwareTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareTabViewController.swift; sourceTree = "<group>"; };
 		9D5204B828F4326400A4A188 /* EBookTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookTabViewController.swift; sourceTree = "<group>"; };
 		9D5204BA28F4327000A4A188 /* MovieTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTabViewController.swift; sourceTree = "<group>"; };
+		9D5204BC28F4581900A4A188 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		9D5204BE28F4582300A4A188 /* MusicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailView.swift; sourceTree = "<group>"; };
+		9D5204C028F4582800A4A188 /* SoftwareDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareDetailView.swift; sourceTree = "<group>"; };
+		9D5204C228F4583E00A4A188 /* EBookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookDetailView.swift; sourceTree = "<group>"; };
+		9D5204C728F4878A00A4A188 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		ED11A83428E99D060036F7DE /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		ED11A83528E99D060036F7DE /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		ED11A83628E99D060036F7DE /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -173,6 +183,7 @@
 			children = (
 				ED180E7728E818BD001D594F /* App */,
 				ED180E7828E818C1001D594F /* Screens */,
+				9D5204C628F4878A00A4A188 /* Model.xcdatamodeld */,
 			);
 			path = "iTunes Client App";
 			sourceTree = "<group>";
@@ -338,6 +349,10 @@
 			isa = PBXGroup;
 			children = (
 				ED3F0DA228E976EA00E21B48 /* DetailView.swift */,
+				9D5204BC28F4581900A4A188 /* MovieDetailView.swift */,
+				9D5204BE28F4582300A4A188 /* MusicDetailView.swift */,
+				9D5204C028F4582800A4A188 /* SoftwareDetailView.swift */,
+				9D5204C228F4583E00A4A188 /* EBookDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,6 +439,7 @@
 				9D5204A528F4262E00A4A188 /* Music.swift in Sources */,
 				ED3F0D9F28E9769A00E21B48 /* DetailViewController.swift in Sources */,
 				9D5204B728F4325A00A4A188 /* SoftwareTabViewController.swift in Sources */,
+				9D5204C128F4582800A4A188 /* SoftwareDetailView.swift in Sources */,
 				ED11A84128E99D2A0036F7DE /* PodcastRequest.swift in Sources */,
 				ED3F0DA328E976EA00E21B48 /* DetailView.swift in Sources */,
 				9D5204AB28F4264300A4A188 /* SoftwareResponse.swift in Sources */,
@@ -436,6 +452,8 @@
 				9D5204B328F4273D00A4A188 /* SoftwareDetailViewController.swift in Sources */,
 				ED180E8C28E830CE001D594F /* Podcast.swift in Sources */,
 				9D5204B528F4274500A4A188 /* EbookDetailViewController.swift in Sources */,
+				9D5204C828F4878A00A4A188 /* Model.xcdatamodeld in Sources */,
+				9D5204BD28F4581900A4A188 /* MovieDetailView.swift in Sources */,
 				9D5204B128F4273500A4A188 /* MusicDetailViewController.swift in Sources */,
 				ED180E6828E815D8001D594F /* MainViewController.swift in Sources */,
 				9D5204AF28F4264F00A4A188 /* EBookResponse.swift in Sources */,
@@ -451,6 +469,8 @@
 				9D5204BB28F4327000A4A188 /* MovieTabViewController.swift in Sources */,
 				ED3F0D9A28E9649100E21B48 /* UIImage+Extensions.swift in Sources */,
 				9D5204B928F4326400A4A188 /* EBookTabViewController.swift in Sources */,
+				9D5204BF28F4582300A4A188 /* MusicDetailView.swift in Sources */,
+				9D5204C328F4583E00A4A188 /* EBookDetailView.swift in Sources */,
 				9D5204A328F425B500A4A188 /* EBookRequest.swift in Sources */,
 				ED11A83928E99D060036F7DE /* HTTPMethod.swift in Sources */,
 				9D52049128F35A7C00A4A188 /* MovieResponse.swift in Sources */,
@@ -662,6 +682,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D5204C628F4878A00A4A188 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D5204C728F4878A00A4A188 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9D5204C728F4878A00A4A188 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ED180E5828E815D8001D594F /* Project object */;
 }

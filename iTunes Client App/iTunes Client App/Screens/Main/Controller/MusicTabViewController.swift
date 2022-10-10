@@ -9,6 +9,7 @@ import UIKit
 
 final class MusicTabViewController: UIViewController {
     
+    let searchController = UISearchController()
     private let mainView = MainView()
     private let networkService = BaseNetworkService()
     private var musicResponse: MusicResponse? {
@@ -23,6 +24,9 @@ final class MusicTabViewController: UIViewController {
         view = mainView
         mainView.setCollectionViewDelegate(self, andDataSource: self)
         fetchMusics()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
     }
     
     private func fetchMusics() {
@@ -35,7 +39,12 @@ final class MusicTabViewController: UIViewController {
             }
         }
     }
+    @objc func addTapped() {
+        
+    }
+
 }
+
 
 
 // MARK: - UICollectionViewDelegate
@@ -65,3 +74,12 @@ extension MusicTabViewController: UICollectionViewDataSource {
         collectionView.reloadItems(at: [indexPath])
     }
 }
+
+extension MusicTabViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        print(text)
+    }
+}
+
+

@@ -11,12 +11,12 @@ final class SoftwareDetailViewController: UIViewController {
     
     var software: Software? {
         didSet {
-            title = software?.trackName
+            title = software?.collectionName
             detailView.imageView.downloadImage(from: software?.artworkLarge)
             detailView.releaseDate = software?.releaseDate
             detailView.artistName = software?.artistName
             detailView.country = software?.country
-            detailView.genres = software?.genres?.reduce("") { $1 + ", " + $0 }
+            detailView.genres = software?.primaryGenreName
         }
     }
     
@@ -25,5 +25,10 @@ final class SoftwareDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = detailView
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add To Favorites", style: .plain, target: self, action: #selector(addToFavoritesTapped))
+    }
+    
+    @objc func addToFavoritesTapped() {
+        
     }
 }

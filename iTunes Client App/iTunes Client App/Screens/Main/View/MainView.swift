@@ -8,6 +8,11 @@
 import UIKit
 
 final class MainView: UIView {
+    
+    //MARK: - Navigation Bar Setup
+    
+    
+    
     // MARK: - Properties
     private let cellInset: CGFloat = 8.0
     private let cellMultiplier: CGFloat = 0.5
@@ -23,6 +28,8 @@ final class MainView: UIView {
     }()
     
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+    
+    
     
     // MARK: - Init
     init() {

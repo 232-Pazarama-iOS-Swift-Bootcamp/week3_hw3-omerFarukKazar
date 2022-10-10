@@ -15,6 +15,7 @@ struct Podcast: Decodable {
     let country: String?
     let genres: [String]?
     
+    
     enum CodingKeys: String, CodingKey {
         case artistName
         case trackName

@@ -18,7 +18,8 @@ struct PodcastRequest: DataRequest {
     }
 
     var queryItems: [String : String] {
-        ["term": "Podcast"]
+        ["term": "Podcast",
+         "media": "podcast"]
     }
 
     var method: HTTPMethod {
@@ -29,6 +30,7 @@ struct PodcastRequest: DataRequest {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let response = try decoder.decode(PodcastResponse.self, from: data)
+        print(response)
         return response
     }
 }

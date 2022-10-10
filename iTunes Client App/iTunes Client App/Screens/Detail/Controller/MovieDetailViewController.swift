@@ -16,7 +16,7 @@ final class MovieDetailViewController: UIViewController {
             detailView.releaseDate = movie?.releaseDate
             detailView.artistName = movie?.artistName
             detailView.country = movie?.country
-            detailView.genres = movie?.genres?.reduce("") { $1 + ", " + $0 }
+            detailView.genres = movie?.primaryGenreName
         }
     }
     
@@ -25,5 +25,10 @@ final class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = detailView
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add To Favorites", style: .plain, target: self, action: #selector(addToFavoritesTapped))
+    }
+    
+    @objc func addToFavoritesTapped() {
+        
     }
 }

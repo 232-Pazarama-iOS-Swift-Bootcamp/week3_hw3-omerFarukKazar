@@ -58,10 +58,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         
         let vc1 = UINavigationController(rootViewController: viewController)
-        let vc2 = UINavigationController(rootViewController: MovieViewController())
+        let vc2 = UINavigationController(rootViewController: MovieTabViewController())
         let vc3 = UINavigationController(rootViewController: MusicTabViewController())
         let vc4 = UINavigationController(rootViewController: SoftwareTabViewController())
         let vc5 = UINavigationController(rootViewController: EBookTabViewController())
+//        let vc6 = UINavigationController(rootViewController: FavoritesTabViewController())
         
         tabBarController.setViewControllers([vc1, vc2, vc3, vc4, vc5], animated: true)
         
@@ -70,6 +71,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         vc3.title = "Music"
         vc4.title = "Software"
         vc5.title = "E-Book"
+//        vc6.title = "Favorites"
         
         guard let items = tabBarController.tabBar.items else {
             return

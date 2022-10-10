@@ -9,6 +9,7 @@ import UIKit
 
 final class SoftwareTabViewController: UIViewController {
     
+    let searchController = UISearchController()
     private let mainView = MainView()
     private let networkService = BaseNetworkService()
     private var softwareResponse: SoftwareResponse? {
@@ -23,6 +24,9 @@ final class SoftwareTabViewController: UIViewController {
         view = mainView
         mainView.setCollectionViewDelegate(self, andDataSource: self)
         fetchSoftwares()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "star"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.searchController = searchController
+        searchController.searchResultsUpdater = self
     }
     
     private func fetchSoftwares() {
@@ -34,6 +38,10 @@ final class SoftwareTabViewController: UIViewController {
                 fatalError(error.localizedDescription)
             }
         }
+    }
+    
+    @objc func addTapped() {
+        
     }
 }
 
@@ -56,7 +64,7 @@ extension SoftwareTabViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PodcastCollectionViewCell
         let software = softwareResponse?.results?[indexPath.row]
-        cell.title = software?.trackName
+        cell.title = software?.collectionName
         cell.imageView.downloadImage(from: software?.artworkLarge)
         return cell
     }
@@ -65,3 +73,12 @@ extension SoftwareTabViewController: UICollectionViewDataSource {
         collectionView.reloadItems(at: [indexPath])
     }
 }
+
+extension SoftwareTabViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        print(text)
+    }
+}
+
+

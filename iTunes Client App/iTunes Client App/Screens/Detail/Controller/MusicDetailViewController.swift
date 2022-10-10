@@ -16,7 +16,7 @@ final class MusicDetailViewController: UIViewController {
             detailView.releaseDate = music?.releaseDate
             detailView.artistName = music?.artistName
             detailView.country = music?.country
-            detailView.genres = music?.genres?.reduce("") { $1 + ", " + $0 }
+            detailView.genres = music?.primaryGenreName
         }
     }
     
@@ -25,5 +25,10 @@ final class MusicDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = detailView
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add To Favorites", style: .plain, target: self, action: #selector(addToFavoritesTapped))
+    }
+    
+    @objc func addToFavoritesTapped() {
+        
     }
 }

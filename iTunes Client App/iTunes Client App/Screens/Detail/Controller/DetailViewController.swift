@@ -9,6 +9,9 @@ import UIKit
 
 final class DetailViewController: UIViewController {
     
+//    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    
     var podcast: Podcast? {
         didSet {
             title = podcast?.trackName
@@ -20,10 +23,29 @@ final class DetailViewController: UIViewController {
         }
     }
     
-    private let detailView = DetailView()
+    private let detailView = DetailView() 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view = detailView
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add To Favorites", style: .plain, target: self, action: #selector(addToFavoritesTapped))
     }
+    
+    @objc func addToFavoritesTapped() {
+        print("Tapped")
+    }
+    
+//    func getAllItems() {
+//        let items = context.fetch(<#T##request: NSFetchRequest<NSFetchRequestResult>##NSFetchRequest<NSFetchRequestResult>#>)
+//    }
+//
+//    func createItems(name: String) {
+//
+//    }
+//    func deleteItem(item: Podcast.CodingKeys) {
+//
+//    }
+//    func updateItem(item: Podcast.CodingKeys) {
+//
+//    }
 }

@@ -9,19 +9,19 @@ import Foundation
 
 struct EBook: Decodable {
     let artistName: String?
-    let trackName: String?
+    let collectionName: String?
     let artworkLarge: URL?
     let releaseDate: String?
     let country: String?
-    let genres: [String]?
+    let primaryGenreName: String?
     
     enum CodingKeys: String, CodingKey {
         case artistName
-        case trackName
-        case artworkLarge = "artworkUrl600"
+        case collectionName
+        case artworkLarge = "artworkUrl100"
         case releaseDate
         case country
-        case genres
+        case primaryGenreName
     }
 }
 

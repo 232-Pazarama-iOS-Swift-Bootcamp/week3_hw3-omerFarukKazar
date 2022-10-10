@@ -44,6 +44,16 @@ class PodcastCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    
+    // I added fav icon to each view but since some background images were blue or some text on the image conflicted with the icon, i decided to put favorites button to detail view navigation bar.
+//    private lazy var favButton: UIButton = {
+//        let icon = UIButton()
+//        icon.setImage 
+//        // icon.setImage(UIImage(systemName: "star"), for: .normal)
+//        // favoritePodcasts.append[]
+//        return icon
+//    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -63,6 +73,14 @@ class PodcastCollectionViewCell: UICollectionViewCell {
             titleLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 16.0),
             titleLabel.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: -8.0)
         ])
+        
+//        addSubview(favButton)
+//        favButton.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            favButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+//            favButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+//        ])
+        
         
         imageView.layer.insertSublayer(gradientLayer, at: .zero)
     }

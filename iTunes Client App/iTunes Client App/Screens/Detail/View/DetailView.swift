@@ -8,43 +8,52 @@
 import UIKit
 
 final class DetailView: UIView {
+    
     var releaseDate: String? {
         didSet {
             releaseDateKeyLabel.text = "Release Date:"
-//            releaseDateKeyLabel.textAlignment = .left
+            //            releaseDateKeyLabel.textAlignment = .left
             releaseDateKeyLabel.font = .boldSystemFont(ofSize: 17.0)
+            releaseDateKeyLabel.textColor = .black
             releaseDateLabel.text = releaseDate ?? "-"
-//            releaseDateLabel.textAlignment = .right
+            releaseDateLabel.textColor = .black
+            //            releaseDateLabel.textAlignment = .right
         }
     }
     
     var artistName: String? {
         didSet {
             artistNameKeyLabel.text = "Artist Name:"
-//            artistNameKeyLabel.textAlignment = .left
+            //            artistNameKeyLabel.textAlignment = .left
             artistNameKeyLabel.font = .boldSystemFont(ofSize: 17.0)
+            artistNameKeyLabel.textColor = .black
             artistNameLabel.text = artistName ?? "-"
-//            artistNameLabel.textAlignment = .right
+            artistNameLabel.textColor = .black
+            //            artistNameLabel.textAlignment = .right
         }
     }
     
     var country: String? {
         didSet {
             countryKeyLabel.text = "Country:"
-//            countryKeyLabel.textAlignment = .left
+            //            countryKeyLabel.textAlignment = .left
             countryKeyLabel.font = .boldSystemFont(ofSize: 17.0)
+            countryKeyLabel.textColor = .black
             countryLabel.text = country ?? "-"
-//            countryLabel.textAlignment = .right
+            countryLabel.textColor = .black
+            //            countryLabel.textAlignment = .right
         }
     }
     
     var genres: String? {
         didSet {
             genresKeyLabel.text = "Genres:"
-//            genresKeyLabel.textAlignment = .left
+            //            genresKeyLabel.textAlignment = .left
             genresKeyLabel.font = .boldSystemFont(ofSize: 17.0)
+            genresKeyLabel.textColor = .black
             genresLabel.text = genres ?? "-"
-//            genresLabel.textAlignment = .right
+            genresLabel.textColor = .black
+            //            genresLabel.textAlignment = .right
         }
     }
     
@@ -82,6 +91,8 @@ final class DetailView: UIView {
         return stackView
     }()
     
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -105,6 +116,7 @@ final class DetailView: UIView {
                                                        artistNameStackView,
                                                        countryStackView,
                                                        genresStackView])
+        
         stackView.axis = .vertical
         stackView.spacing = 8.0
         addSubview(stackView)
@@ -119,4 +131,9 @@ final class DetailView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    //    private lazy var mainStackView: UIStackView = {
+    //        let stackView = UIStackView()
+    //        stackView.axis = .vertical
+    //        return stackView
+    //    }()
 }
